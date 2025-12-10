@@ -71,7 +71,7 @@
 
 <body class="bg-light">
 
-  <!-- Top controls: Dark mode + View Favorites -->
+
   <div class="container mt-3 text-center">
     <button id="toggleDark" class="btn btn-secondary me-2">Dark Mode</button>
     <a href="{% url 'favorites_list' %}" class="btn btn-outline-dark ms-2">
@@ -79,14 +79,14 @@
     </a>
   </div>
 
-  <!-- TOP SECTION -->
+
   <div class="container-fluid bg-dark text-white py-5 mt-3">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8 text-center">
         <h1 class="display-5 fw-semibold mb-2">Ticketmaster</h1>
         <p class="lead mb-4">Quickly find tickets around you</p>
 
-        <!-- Search form -->
+
         <form method="get" class="d-flex gap-2 justify-content-center flex-column flex-md-row">
           <!-- Categories -->
           <div class="flex-fill">
@@ -205,7 +205,7 @@
         {% endfor %}
 
       {% elif category or city %}
-        <!-- No results after a search -->
+        <!-- In case no results after a search -->
         <p class="text-center text-muted mb-0">No results found.</p>
       {% endif %}
 
